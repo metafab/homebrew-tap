@@ -1,26 +1,26 @@
 class OtelGui < Formula
   desc "Lightweight OpenTelemetry trace viewer"
   homepage "https://github.com/metafab/otel-gui"
-  version "2.0.1"
+  version "2.0.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/metafab/otel-gui/releases/download/v2.0.1/otel-gui-macos-arm64.tar.gz"
-      sha256 "bc3ed0ad851dbef29792cb2ce27463644f9ae41dd715a4eeecb7535ee3f75863"
+      url "https://github.com/metafab/otel-gui/releases/download/v2.0.0/otel-gui-macos-arm64.tar.gz"
+      sha256 "73fbb724fd6d2e8e92f775ed4d312cc5f68fbe64bc48ba47ba6e056b05479931"
     else
-      url "https://github.com/metafab/otel-gui/releases/download/v2.0.1/otel-gui-macos-x64.tar.gz"
-      sha256 "9f3a569bccc63aa2a4969e7651e29b49d1ad02677b6cbe24f43fda17ec985226"
+      url "https://github.com/metafab/otel-gui/releases/download/v2.0.0/otel-gui-macos-x64.tar.gz"
+      sha256 "78a7c9c480f6fbfd72e9d82644facbc97c47659a535eb1b589db6445ba74310b"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/metafab/otel-gui/releases/download/v2.0.1/otel-gui-linux-arm64.tar.gz"
-      sha256 "85ad21c5ba4501b58163617837c8066ab747ffab1888158d82f9b791d19ecfbe"
+      url "https://github.com/metafab/otel-gui/releases/download/v2.0.0/otel-gui-linux-arm64.tar.gz"
+      sha256 "cf73f62a106ab244d1fea6313ac433e3223212a274b92e244394b07d918dc7fc"
     else
-      url "https://github.com/metafab/otel-gui/releases/download/v2.0.1/otel-gui-linux-x64.tar.gz"
-      sha256 "fee430f27a9ce02841605b3b233b32dd8120c2fdb5589b8799a8f4b816af814a"
+      url "https://github.com/metafab/otel-gui/releases/download/v2.0.0/otel-gui-linux-x64.tar.gz"
+      sha256 "ed679720918be8e1f561d19d070159d1f00573f5b07b2d7e8b85eaeaf3091517"
     end
   end
 
