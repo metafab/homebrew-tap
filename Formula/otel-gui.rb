@@ -7,20 +7,20 @@ class OtelGui < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/metafab/otel-gui/releases/download/v2.0.0/otel-gui-macos-arm64.tar.gz"
-      sha256 "73fbb724fd6d2e8e92f775ed4d312cc5f68fbe64bc48ba47ba6e056b05479931"
+      sha256 "4a3ecf98569bbd736a218ffa8165e164eab67e93b5ff9ed7766aa87252f9e0ec"
     else
       url "https://github.com/metafab/otel-gui/releases/download/v2.0.0/otel-gui-macos-x64.tar.gz"
-      sha256 "78a7c9c480f6fbfd72e9d82644facbc97c47659a535eb1b589db6445ba74310b"
+      sha256 "fcd38e45dc9278627edb5746e07209500a050191cd8bc902512304400f2ee914"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/metafab/otel-gui/releases/download/v2.0.0/otel-gui-linux-arm64.tar.gz"
-      sha256 "cf73f62a106ab244d1fea6313ac433e3223212a274b92e244394b07d918dc7fc"
+      sha256 "ea4e54c522302aa2b0a771f476f3a60b53779109735846f19a0cf60d01bb80dc"
     else
       url "https://github.com/metafab/otel-gui/releases/download/v2.0.0/otel-gui-linux-x64.tar.gz"
-      sha256 "ed679720918be8e1f561d19d070159d1f00573f5b07b2d7e8b85eaeaf3091517"
+      sha256 "5fe7af4d4f201dd57a9919173588f88b30eece040c65762570963817116f6e82"
     end
   end
 
@@ -28,7 +28,7 @@ class OtelGui < Formula
     libexec.install "otel-gui", "build", "proto", "node_modules"
     (bin/"otel-gui").write <<~EOS
       #!/bin/bash
-      exec "#{libexec}/otel-gui" ""
+      exec "#{libexec}/otel-gui" "$@"
     EOS
   end
 
