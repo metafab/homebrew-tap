@@ -1,5 +1,5 @@
 class OtelGui < Formula
-  desc "Lightweight OpenTelemetry trace viewer"
+  desc "Lightweight OpenTelemetry viewer"
   homepage "https://github.com/metafab/otel-gui"
   version "2.1.0"
   license "MIT"
